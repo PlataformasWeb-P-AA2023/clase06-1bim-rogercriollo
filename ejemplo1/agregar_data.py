@@ -1,6 +1,6 @@
 from sqlalchemy.orm import sessionmaker
 
-from crear_base import Saludo
+from crear_base import MisSaludos
 from configuracion import engine
 
 Session = sessionmaker(bind=engine)
@@ -9,11 +9,11 @@ session = Session()
 # se crea un objeto de tipo
 # Saludo
 
-miSaludo = Saludo()
+miSaludo = MisSaludos()
 miSaludo.mensaje = "Hola que tal"
 miSaludo.tipo = "informal"
 
-miSaludo2 = Saludo()
+miSaludo2 = MisSaludos()
 miSaludo2.mensaje = "Buenas tardes"
 miSaludo2.tipo = "formal"
 

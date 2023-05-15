@@ -14,8 +14,8 @@ Base = declarative_base()
 
 from sqlalchemy import Column, Integer, String
 
-class Saludo(Base):
-    __tablename__ = 'saludo'
+class MisSaludos(Base):
+    __tablename__ = 'missaludo'
 
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))
